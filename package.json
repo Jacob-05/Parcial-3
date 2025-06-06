@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "firebase": "^11.9.0",
+    "lint": "^0.8.19"
+  },
+  "name": "parcial-3",
+  "version": "1.0.0",
+  "description": "Parcial 3 Jacobo Salazar/A00402766",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacob-05/Parcial-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacob-05/Parcial-3/issues"
+  },
+  "homepage": "https://github.com/Jacob-05/Parcial-3#readme"
+}
