@@ -1,4 +1,4 @@
-import { isLoggedIn } from "../services/AuthService";
+import { isLoggedIn } from "../services/authService";
 
 class AuthContainer extends HTMLElement {
     private currentForm: string = "login";
@@ -9,17 +9,17 @@ class AuthContainer extends HTMLElement {
     }
 
     connectedCallback() {
-        // Verificar si el usuario ya está autenticado
+
         if (isLoggedIn()) {
-            // El usuario ya está autenticado, disparar evento
+           
             window.dispatchEvent(new CustomEvent("auth-changed", { detail: { isLoggedIn: true } }));
             return;
         }
 
-        // Renderizar formulario inicial
+        
         this.render();
 
-        // Escuchar eventos para cambiar entre formularios
+        
         window.addEventListener("switch-auth-form", this.handleSwitchForm.bind(this));
     }
 

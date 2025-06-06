@@ -1,6 +1,6 @@
 import { collection, addDoc, getDocs, doc, deleteDoc, updateDoc, query, where } from 'firebase/firestore';
 import { TaskType } from '../Types/types';
-import { db, auth } from '';
+import { db, auth } from '../config/Firebase';
 
 export class TaskService {
     private collection = collection(db, 'tasks');

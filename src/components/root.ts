@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../config/firebase';
+import { auth } from '../config/Firebase';
 import '../styles/main.css';
 
 class Root extends HTMLElement {
